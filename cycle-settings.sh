@@ -19,5 +19,5 @@ rm -rf /c/server/bec/Config/Config.cfg
 # Copy across replacement content
 cp -r /c/server/Arma-Server/keys /c/server/arma/keys
 cp -r /c/server/Arma-Server/mpmissions /c/server/arma/mpmissions
-cp -r /c/server/Arma-Server/profiles /c/server/profiles
-cp -r /c/server/Arma-Server/bec /c/server/bec/Config
+cp -r /c/server/Arma-Server/profiles /c/server/arma/profiles
+cp -r /c/server/Arma-Server/Config /c/server/bec

@@ -28,9 +28,9 @@ rm -rf steamcmd.zip
 
 # Download the BattleEye Enhanced Tools
 cd /c/server/bec
-wget https://github.com/bbatton/UEP_BattlEye_Extended_Controller_Installer/archive/master.zip
-unzip master.zip
-rm -rf master.zip
+wget ibattle.org/Downloads/Bec.zip
+unzip Bec.zip
+rm -rf Bec.zip
 
 # Download the latest settings
 /bin/bash /c/server-tools/cycle-settings.sh
