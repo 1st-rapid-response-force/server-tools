@@ -14,7 +14,7 @@ cd Arma-Server
 rm -rf /c/server/arma/keys
 rm -rf /c/server/arma/mpmissions
 rm -rf /c/server/arma/profiles
-rm -rf /c/server/bec/Config/Config.cfg
+rm -rf /c/server/bec/Config
 
 # Copy across replacement content
 cp -r /c/server/Arma-Server/keys /c/server/arma/keys
