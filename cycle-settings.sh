@@ -29,4 +29,5 @@ cd /c/server/arma/battleye
 echo "rconpassword " > beconfig.cfg
 < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32} > beconfig.cfg
 
+mkdir /c/server/arma/BattlEye
 cp /c/server/arma/battleye/beconfig.cfg /c/server/arma/profiles/BattlEye/beconfig.cfg
