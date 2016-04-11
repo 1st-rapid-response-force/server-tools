@@ -23,7 +23,7 @@ cp -r /c/server/Arma-Server/profiles /c/server/arma/profiles
 cp -r /c/server/Arma-Server/Config /c/server/bec
 
 # Generate a new BattlEye password
-rm -rf /c/server/arma/battleye/beconfig.cfg
+rm -rf /c/server/arma/battleye/beserver.cfg
 
 cd /c/server/arma/battleye
 echo "rconpassword " > beconfig.cfg
