@@ -16,5 +16,6 @@ if pgrep arma3server >/dev/null 2>&1
 
 fi
 
-sleep 1m
+# Wait 30 seconds before we bring the server back up
+sleep 30s
 done
