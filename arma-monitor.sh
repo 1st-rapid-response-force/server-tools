@@ -12,6 +12,9 @@ if pgrep arma3server >/dev/null 2>&1
     echo "ARMA Server Status Check - PASSED"
   else
     echo "ARMA Server Status Check - FAILED"
+
+# Take this opportunity to pull the latest settings
+/bin/bash /c/server-tools/cycle-settings.sh
 /bin/bash /c/server-tools/start-arma.sh
 
 fi
