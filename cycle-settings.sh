@@ -26,7 +26,7 @@ cp -r /c/server/Arma-Server/Config /c/server/bec
 rm -rf /c/server/arma/battleye/beserver.cfg
 
 cd /c/server/arma/battleye
-echo "rconpassword " > beconfig.cfg
+echo "rconpassword " > beserver.cfg
 < /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32} >> beserver.cfg
 
 mkdir /c/server/arma/profiles/BattlEye
