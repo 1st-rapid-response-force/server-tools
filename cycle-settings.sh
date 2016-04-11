@@ -26,8 +26,10 @@ cp -r /c/server/Arma-Server/Config /c/server/bec
 rm -rf /c/server/arma/battleye/beserver.cfg
 
 cd /c/server/arma/battleye
+NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
+
 echo "rconpassword " > beserver.cfg
-< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32} >> beserver.cfg
+echo -n $NEW_UUID >> beserver.cfg
 
 mkdir /c/server/arma/profiles/BattlEye
 cp /c/server/arma/battleye/beserver.cfg /c/server/arma/profiles/BattlEye/beserver.cfg
