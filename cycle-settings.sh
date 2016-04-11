@@ -21,3 +21,12 @@ cp -r /c/server/Arma-Server/keys /c/server/arma/keys
 cp -r /c/server/Arma-Server/mpmissions /c/server/arma/mpmissions
 cp -r /c/server/Arma-Server/profiles /c/server/arma/profiles
 cp -r /c/server/Arma-Server/Config /c/server/bec
+
+# Generate a new BattlEye password
+rm -rf /c/server/arma/battleye/beconfig.cfg
+
+cd /c/server/arma/battleye
+echo "rconpassword " > beconfig.cfg
+< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32} > beconfig.cfg
+
+cp /c/server/arma/battleye/beconfig.cfg /c/server/arma/profiles/BattlEye/beconfig.cfg
