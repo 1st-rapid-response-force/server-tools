@@ -41,3 +41,10 @@ cp /c/server/Arma-Server/server.cfg.example /c/server/arma/server.cfg
 # Download the Fusion DLL
 cd /c/server/arma
 wget https://bitbucket.org/micovery/sock.dll/raw/v0.0.2/Release/sock.dll
+
+# Create a random RCON password
+cd /c/server/arma/battleye
+echo "rconpassword " > beconfig.cfg
+< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32} > beconfig.cfg
+
+echo "" > Bans.txt
