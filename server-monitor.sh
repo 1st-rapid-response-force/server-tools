@@ -9,8 +9,9 @@ while true; do
 
 if pgrep arma3server >/dev/null 2>&1
   then
+    echo "ARMA Server Status Check - PASSED"
   else
-     echo "arma3server not running sending restart"
+    echo "ARMA Server Status Check - FAILED"
 /bin/bash /c/server-tools/start-arma.sh
 
 fi
