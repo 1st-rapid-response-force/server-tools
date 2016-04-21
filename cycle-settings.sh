@@ -29,7 +29,7 @@ cd /c/server/arma/battleye
 NEW_PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 
 echo "rconpassword "$NEW_PASSWORD > beserver.cfg
-echo "RConPort 2315" >> beserver.cfg
+echo "RConPort 2302" >> beserver.cfg
 echo "RConIP 192.168.0.1" >> beserver.cfg
 
 mkdir /c/server/arma/profiles/BattlEye
